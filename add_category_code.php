@@ -239,4 +239,4 @@ if (isset($_POST['add_category_btn'])) {
 else {
     header("Location: ../index.php");
 }
-?>
+?> 

@@ -4,84 +4,10 @@ include 'database.php';
 ?>
 
 <html>
-
 <head>
     <link rel="stylesheet" href="cloudmart1.css">
 
     <style>
-        /* Ensure the product container has proper spacing and alignment */
-.product-container {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
-
-/* Style the individual product card */
-.card {
-    width: 300px;
-    height:800px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
-/* Ensure image responsiveness */
-.card-img-top {
-    width: 100%;
-    height: 200px;
-    
-    object-fit: cover;
-}
-
-/* Ensure card content doesn't overflow */
-.card-body {
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-}
-
-/* Title and price styling */
-.card-title h6 {
-    font-size: 14px;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-}
-
-/* Price styling */
-.current-price {
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-}
-
-.original-price {
-    font-size: 14px;
-    color: #888;
-    text-decoration: line-through;
-}
-
-/* Ensure text does not overflow and remains within the container */
-.card-title, .current-price, .original-price {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-/* Optional: Add a gap between cards */
-.product-container {
-    gap: 1rem;
-}
-
         .material-symbols-outlined {
             font-variation-settings:
                 'FILL' 0,
@@ -90,9 +16,6 @@ include 'database.php';
                 'opsz' 24
         }
 
-        .col-4-card {
-    height: 100%; /* Ensures the card takes full height of its parent */
-}
         .material-symbols-outlined {
             background: green;
             border-radius: 20px;
@@ -106,27 +29,13 @@ include 'database.php';
             text-decoration: line-through;
             color: red;
         }
-        .card-body {
-    height: 100%; /* Adjusts to fill the card container */
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centers content vertically */
-}
-        .slider {
-    height: 200px; /* Adjust the height as needed */
-    overflow: hidden; /* This ensures that anything exceeding the height is hidden */
-}
-.tab-content{
-    margin-top:100px;
-}
-
     </style>
 </head>
 
 <body>
     <div class="py-5">
         <div class="container pb-3 pb-3">
-            <div class="row">
+            <div class="row gap-4">
                 <div class="product-container d-flex gap-2">
                     <?php
                     $trendingProducts = getAllTrending();
