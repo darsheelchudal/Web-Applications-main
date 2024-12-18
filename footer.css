@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+body {
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.brand-name{
+    display: flex;
+    padding-top: 12px;
+    padding-left: 8px;
+}
+.brand-cloud{
+    color: white;
+    font-size: xx-large;
+}
+.brand-mart{
+    color: #43766C;
+    padding-left: 4px;
+    font-size: xx-large;
+}
+.input-group input[type="search"]{
+    margin-left: 130px;
+    border-radius: 10px;
+}
+
+#facebook-icon {
+    font-size: 35px; /* Adjust the size as needed */
+    color: #43766c;
+    margin-top: 20px;
+}
+span .credit{
+    color:grey;
+    font-weight: 900;
+    height: auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-right: 10px;
+}
+#facebook-icon:hover{
+    background: orangered;
+    border-radius: 5px;
+}
